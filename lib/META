@@ -1,0 +1,11 @@
+# OASIS_START
+# DO NOT EDIT (digest: 565ae47f1c207083df66c71de10be7eb)
+version = "0.1"
+description = "An example arithmetic parser."
+archive(byte) = "arith_lib.cma"
+archive(byte, plugin) = "arith_lib.cma"
+archive(native) = "arith_lib.cmxa"
+archive(native, plugin) = "arith_lib.cmxs"
+exists_if = "arith_lib.cma"
+# OASIS_STOP
+

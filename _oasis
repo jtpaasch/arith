@@ -1,0 +1,25 @@
+Name: arith
+Version: 0.1
+OCamlVersion: >= 4.05
+Synopsis: An example arithmetic parser.
+Authors: JT Paasch
+License: LGPL with OCaml linking exception
+OASISFormat: 0.4
+BuildTools: ocamlbuild
+Plugins: META (0.4), DevFiles (0.4)
+
+Library arith_lib
+  Path: lib/
+  Modules:
+    Token,
+    Lexer,
+    Parser,
+    Eval
+  FindlibName: arith_lib
+
+Executable arith
+  Path: src/
+  MainIs: main.ml
+  BuildDepends:
+    arith_lib
+  Install: false
